@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div>
+      <button (click)="addUser()">Add user</button>
+      <ng-container *ngIf="storage.loggedUser">
+        <label>Change name:</label>
+        <input type="text" [(ngModel)]="storage.loggedUser.name">
+      </ng-container>
+    </div>
+    <ion-button color="primary" [routerLink]="'/details'">Nav to Details</ion-button>
+  </div>
+</ion-content>

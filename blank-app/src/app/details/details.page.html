@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="primary" [routerLink]="'/home'">Back</ion-button>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <label>User name:</label>
+  <p>{{storage.loggedUser.name}}</p>
+  <ion-button color="primary" (click)="navBack($event)">Back with TS</ion-button>
+</ion-content>

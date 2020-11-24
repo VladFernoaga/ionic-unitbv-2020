@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      People
-    </ion-title>
+    <ion-title> People </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,6 +14,17 @@
   <div id="slider">
     <router-outlet></router-outlet>
   </div> -->
+
+  <div class="color-box special-box" style="border: 3px solid red">
+    <div class="inline-box"></div>
+  </div>
+
+  <div class="tab-bar d-flex justify-content-around align-items-center">
+    <div>News</div>
+    <div>Message</div>
+    <div>Social</div>
+    <div>Photo</div>
+  </div>
 
   <app-explore-container name="My friends"></app-explore-container>
 </ion-content>

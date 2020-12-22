@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
+  <button (click)="getProducts()">Get products</button>
+  <ng-container *ngFor=" let product of products">
+    <div>
+      Name: {{product.name}}  Description: {{product.description}} 
+    </div>
+  </ng-container>
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
